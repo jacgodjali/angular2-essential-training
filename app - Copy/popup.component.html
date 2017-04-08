@@ -1,0 +1,19 @@
+<div [hidden]= "isShow()" class="pop-up">
+ <div class="exit">
+    <a class="close" (click)="onClose()">
+      x
+    </a>
+  <h2>{{ media ? media.name : "" }}</h2>
+   <br><br>
+   <img [src] = 'media ? media.images : "" ' class = "images">
+  <div> {{ media ? media.watchedOn : "" }}</div>
+  <div>{{ media ? media.category : "" }}</div>
+  <div>{{ media ? media.year : "" }}</div>
+  <a class="prev" (click)="onPrev()">
+    <
+  </a>
+  <a class="next" (click)="onNext()">
+    >
+  </a>
+  </div>
+</div>

@@ -4,6 +4,7 @@
 </template>
 <div>{{ mediaItem.category }}</div>
 <div>{{ mediaItem.year }}</div>
+<div>{{ mediaItem.images }}</div>
 <div class="tools">
   <svg
     [mwFavorite]="mediaItem.isFavorite" 
@@ -17,4 +18,7 @@
   <a class="details">
     watch
   </a>
+  <a class="preview" (click)="onPreview()">
+    preview
+    </a>
 </div>
