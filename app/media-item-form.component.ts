@@ -21,33 +21,13 @@ export class MediaItemFormComponent {
 
   ngOnInit() {
     this.form = this.formBuilder.group({
-      medium: this.formBuilder.control('Movies'),
+      medium: this.formBuilder.control('Business'),
       name: this.formBuilder.control('', Validators.compose([
         Validators.required,
         Validators.pattern('[\\w\\-\\s\\/]+')
       ])),
       category: this.formBuilder.control(''),
-      year: this.formBuilder.control('', this.yearValidator),
     });
-  }
-
-  yearValidator(control) {
-    if (control.value.trim().length === 0) {
-      return null;
-    }
-    let year = parseInt(control.value);
-    let minYear = 1800;
-    let maxYear = 2500;
-    if (year >= minYear && year <= maxYear) {
-      return null;
-    } else {
-      return {
-        'year': {
-          min: minYear,
-          max: maxYear
-        }
-      };
-    }
   }
 
   onSubmit(mediaItem) {

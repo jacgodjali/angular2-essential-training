@@ -1,0 +1,17 @@
+<div [hidden]="isShow()" class="pop-up">
+  <div class="exit">
+    <a class="close" (click)="onClose()">
+      x
+    </a>
+    <h2>{{ media ? media.name : "" }}</h2>
+    <br><br>
+    <div> {{ media ? media.category : "" }}</div>
+    <div>{{ media ? media.gender : "" }}</div>
+    <div>{{ media ? media.phone : "" }}</div>
+    <div>{{ media ? media.email : "" }}</div>
+    <div>{{ media ? media.job : "" }}</div>  
+    <div>{{ media ? media.address : "" }}</div>
+    
+    
+  </div>
+</div>

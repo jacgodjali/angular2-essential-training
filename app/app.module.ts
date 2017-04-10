@@ -13,6 +13,7 @@ import { MediaItemService } from './media-item.service';
 import { lookupListToken, lookupLists } from './providers';
 import { MockXHRBackend } from './mock-xhr-backend';
 import { routing } from './app.routing';
+import { PopupComponent } from './popup.component';
 
 @NgModule({
   imports: [
@@ -27,7 +28,8 @@ import { routing } from './app.routing';
     MediaItemListComponent,
     FavoriteDirective,
     CategoryListPipe,
-    MediaItemFormComponent
+    MediaItemFormComponent,
+    PopupComponent
   ],
   providers: [
     MediaItemService,

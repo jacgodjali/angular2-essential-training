@@ -7,8 +7,8 @@ export class CategoryListPipe {
   transform(mediaItems) {
     var categories = [];
     mediaItems.forEach(mediaItem => {
-      if (categories.indexOf(mediaItem.category) <= -1) {
-        categories.push(mediaItem.category);
+      if (categories.indexOf(mediaItem.medium) <= -1) {
+        categories.push(mediaItem.medium);
       }
     });
     return categories.join(', ');

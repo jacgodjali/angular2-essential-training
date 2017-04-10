@@ -1,14 +1,17 @@
 <header 
-    [ngClass]="{'medium-movies':medium === 'Movies', 'medium-series':medium === 'Series'}">
+    [ngClass]="{'medium-business':medium === 'Business', 'medium-relative':medium === 'Relative'}">
     <h2>{{medium}}</h2>
     <div>{{ mediaItems | categoryList }}</div>
+    
 </header>
 <section>
   <mw-media-item
-    [ngClass]="{'medium-movies': mediaItem.medium==='Movies', 'medium-series':mediaItem.medium==='Series'}" 
+    [ngClass]="{'medium-business':medium === 'Business', 'medium-relative':medium === 'Relative'}" 
     *ngFor="let mediaItem of mediaItems"
     [mediaItem]="mediaItem"
-    (delete)="onMediaItemDelete($event)"></mw-media-item>
+    (delete)="onMediaItemDelete($event)"
+    (preview)="onMediaItemPreview($event)"></mw-media-item>
+    <mw-popup [media]="contact" (close)="onMediaItemClose()"></mw-popup>
 </section>
 <footer>
   <a routerLink="/add">

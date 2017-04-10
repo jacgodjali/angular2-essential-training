@@ -74,45 +74,55 @@ export class MockXHRBackend {
   _mediaItems = [
     {
       id: 1,
-      name: "Firebug",
-      medium: "Series",
-      category: "Science Fiction",
-      year: 2010,
-      watchedOn: 1294166565384,
+      name: "Joseph G Hewlett",
+      medium: "Business",
+      gender: "Male",
+      phone: "312-2616132",
+      address: "2618 Cecil Street, Chicago, Illinois, Zip: 60601",
+      job: "Fashion Designer",
+      email: "joeg.hewlett@mitrais.com",
       isFavorite: false
     },
     {
       id: 2,
-      name: "The Small Tall",
-      medium: "Movies",
-      category: "Comedy",
-      year: 2015,
-      watchedOn: null,
+      name: "Cliffor A Hampton",
+      medium: "Relative",
+      gender: "Male",
+      phone: "305-251-0857",
+      address: "3589 Agriculture Lane, Perrine, Florida, Zip: 33157",
+      job: "Auditing Clerk",
+      email: "cliff@mitrais.com",
       isFavorite: true
     }, {
       id: 3,
-      name: "The Redemption",
-      medium: "Movies",
-      category: "Action",
-      year: 2016,
-      watchedOn: null,
+      name: "Juana M Smothers",
+      medium: "Relative",
+      gender: "Female",
+      phone: "347-769-2052",
+      address: "3668 Diamond Cove, Ashton, Rhode Island, Zip: 22864",
+      job: "Electrophysiologist",
+      email: "juanam@mitrais.com",
       isFavorite: false
     }, {
       id: 4,
-      name: "Hoopers",
-      medium: "Series",
-      category: "Drama",
-      year: null,
-      watchedOn: null,
+      name: "Victoria W Conway",
+      medium: "Relative",
+      gender: "Female",
+      phone: "814-796-5639",
+      address: "2279 Spadafore Drive, Waterford (Erie), Pennsylvania, Zip: 16441",
+      job: "Elevator Inspector",
+      email: "victoriaw@mitrais.com",
       isFavorite: true
     }, {
       id: 5,
-      name: "Happy Joe: Cheery Road",
-      medium: "Movies",
-      category: "Action",
-      year: 2015,
-      watchedOn: 1457166565384,
-      isFavorite: false
+      name: "Kim B Raymond",
+      medium: "Business",
+      gender: "Female",
+      phone: "305-2510857",
+      address: "407 Deans Lane, Westbury, New York Zip: 11590",
+      job: "Bookkeeping Clerk",
+      email: "kimb.raymond@mitrais.com",
+      isFavorite: true
     }
   ];
 }

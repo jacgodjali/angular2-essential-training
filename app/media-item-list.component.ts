@@ -12,7 +12,7 @@ export class MediaItemListComponent {
   medium = '';
   mediaItems = [];
   paramsSubscription;
-
+  contact = null;
   constructor(
     private mediaItemService: MediaItemService,
     private activatedRoute: ActivatedRoute) {}
@@ -38,7 +38,13 @@ export class MediaItemListComponent {
         this.getMediaItems(this.medium);
       });
   }
-
+  onMediaItemPreview(mediaItem) {
+    this.contact = mediaItem;
+  }
+  
+  onMediaItemClose() {
+    this.contact = null;
+  }
   getMediaItems(medium) {
     this.medium = medium;
     this.mediaItemService.get(medium)
